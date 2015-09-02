@@ -1,6 +1,8 @@
 <?php
 
-/* Copyright (C) 2011 by iRail vzw/asbl */
+/**
+ * Copyright (C) 2011 by iRail vzw/asbl.
+ */
 include_once 'Printer.php';
 
 /**
@@ -10,12 +12,10 @@ include_once 'Printer.php';
  */
 class Kml extends Printer
 {
-    private $ATTRIBUTES = ['id', 'locationX', 'locationY', 'standardname', 'left', 'delay', 'normal'];
     private $rootname;
 
     // make a stack of array information, always work on the last one
     // for nested array support
-    private $stack = [];
     private $arrayindices = [];
     private $currentarrayindex = -1;
 
